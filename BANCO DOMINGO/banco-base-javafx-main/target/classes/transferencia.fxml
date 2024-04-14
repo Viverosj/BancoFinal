@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox alignment="center" prefHeight="300.0" prefWidth="400.0" spacing="30.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.banco.controlador.TransferenciaControlador">
+   <children>
+      <VBox prefHeight="304.0" prefWidth="400.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="32.0" prefWidth="119.0" text="Realizar Transferencia" />
+         </children>
+      </VBox>
+   </children>
+</VBox>

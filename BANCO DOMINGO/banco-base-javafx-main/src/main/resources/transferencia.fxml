@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="center" prefHeight="368.0" prefWidth="400.0" spacing="30.0" style="-fx-background-color: #DDA0DD;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.banco.controlador.TransferenciaControlador">
+   <Label fx:id="RealizarTlabel" text="Realizar Transferencia">
+      <font>
+         <Font name="System Italic" size="20.0" />
+      </font>
+   </Label>
+
+   <HBox alignment="CENTER" spacing="10.0">
+      <Label fx:id="NuCuentaLabel" text="Número de Cuenta: " />
+      <TextField fx:id="NumeroCuentaTextField" />
+   </HBox>
+
+   <HBox alignment="CENTER" spacing="10.0">
+      <Label fx:id="TransferirLabel" text="Monto a Transferir: " />
+      <TextField fx:id="MontoTransferirTexField" />
+   </HBox>
+   <HBox prefHeight="33.0" prefWidth="400.0">
+      <children>
+         <Label fx:id="CategoriaLabel" prefHeight="18.0" prefWidth="185.0" text="                    Categoria:" />
+      
+         <ComboBox fx:id="comboCategorias" prefHeight="26.0" prefWidth="146.0">
+            <items>
+               <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="VIAJES" />
+                  <String fx:value="FACTURAS" />
+                  <String fx:value="GASOLINA" />
+                  <String fx:value="ROPA" />
+                  <String fx:value="PAGO" />
+                  <String fx:value="OTROS" />
+               </FXCollections>
+            </items>
+         </ComboBox>
+      </children>
+   </HBox>
+   <Button fx:id="TransferirButton" mnemonicParsing="false" style="-fx-background-color: #00FFFF; -fx-text-fill: Black;" text="Transferir" />
+   <Label />
+
+</VBox>
